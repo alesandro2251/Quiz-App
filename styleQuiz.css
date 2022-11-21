@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background: url(./img/background.png);
+}
+.container{
+    width: 800px;
+    max-width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    padding: 10px;
+    background-color: white;
+}
+.button-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 10px 0;
+}
+.true{
+    font-size: 25px;
+}
+.false{
+    font-size: 25px;
+}
+.button:hover{
+    background-color: lightgreen;
+}
+.correct{
+    background-color: seagreen;
+    color: white;
+}
+.wrong{
+    background-color: crimson;
+    color: black;
+}
+.question{
+    font-size: 35px;
+}
+.hidden{
+    display: none;
+}
+.start{
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.start:hover{
+    background-color: #0284c7;
+    color: white;
+}
+.next{
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.next:hover{
+    background-color: #0ea5e9;
+    color: white;
+}
+.intro{
+    font-size: 30px;
+}
+.preload{
+    background: #0c4a6e url(./img/loadinganimation.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
